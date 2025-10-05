@@ -1,0 +1,95 @@
+2025-10-05 18:37:42 [main] INFO com.ui.listeners.TestListener::onStart::60 Test Suite Started.. 
+2025-10-05 18:37:42 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::<init>::31 Launching browser: EDGE 
+2025-10-05 18:37:42 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::<init>::31 Launching browser: EDGE 
+2025-10-05 18:37:44 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.HomePage::<init>::31 Launching browser: EDGE 
+2025-10-05 18:37:48 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::navigateToWebsite::42 Navigating to URL: http://www.automationpractice.pl/index.php 
+2025-10-05 18:37:48 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::navigateToWebsite::42 Navigating to URL: http://www.automationpractice.pl/index.php 
+2025-10-05 18:37:50 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.HomePage::navigateToWebsite::42 Navigating to URL: http://www.automationpractice.pl/index.php 
+2025-10-05 18:37:52 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::navigateToWebsite::44 Maximizing browser 
+2025-10-05 18:37:59 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.HomePage::navigateToWebsite::44 Maximizing browser 
+2025-10-05 18:37:59 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener::onTestStart::26 loginTest2 
+2025-10-05 18:37:59 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener::onTestStart::27 This is CSV data driven login test 
+2025-10-05 18:37:59 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener::onTestStart::28 [] 
+2025-10-05 18:37:59 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::clickOn::49 clicking on Element: By.xpath: //a[@class='login'] 
+2025-10-05 18:37:59 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::navigateToWebsite::44 Maximizing browser 
+2025-10-05 18:37:59 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener::onTestStart::26 loginTest3 
+2025-10-05 18:37:59 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener::onTestStart::27 This is Excel data driven login test 
+2025-10-05 18:37:59 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener::onTestStart::28 [smoke, e2e] 
+2025-10-05 18:37:59 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.HomePage::clickOn::49 clicking on Element: By.xpath: //a[@class='login'] 
+2025-10-05 18:38:00 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener::onTestStart::26 loginTest1 
+2025-10-05 18:38:00 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener::onTestStart::27 This is JSON data driven login test 
+2025-10-05 18:38:00 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener::onTestStart::28 [] 
+2025-10-05 18:38:00 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::49 clicking on Element: By.xpath: //a[@class='login'] 
+2025-10-05 18:38:04 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage::enterText::55 Entering text: kosih62@ncien.com 
+2025-10-05 18:38:05 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.LoginPage::enterText::55 Entering text: kosih62@ncien.com 
+2025-10-05 18:38:05 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LoginPage::enterText::55 Entering text: kosih62204@ncien.com 
+2025-10-05 18:38:05 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage::enterText::55 Entering text: Password 
+2025-10-05 18:38:05 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage::clickOn::49 clicking on Element: By.id: SubmitLogin 
+2025-10-05 18:38:06 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LoginPage::enterText::55 Entering text: Password 
+2025-10-05 18:38:06 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.LoginPage::enterText::55 Entering text: Password 
+2025-10-05 18:38:06 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LoginPage::clickOn::49 clicking on Element: By.id: SubmitLogin 
+2025-10-05 18:38:06 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.LoginPage::clickOn::49 clicking on Element: By.id: SubmitLogin 
+2025-10-05 18:38:07 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener::onTestFailure::40 loginTest1  FAILED 
+2025-10-05 18:38:07 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener::onTestFailure::41 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='View my customer account']"}
+  (Session info: MicrosoftEdge=140.0.3485.94)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7d4db2ca5fa57fb42dda7fcbe6673a93, findElement {using=xpath, value=//a[@title='View my customer account']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.94, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58363}, msedge: {msedgedriverVersion: 140.0.3485.110 (5819fb637a5..., userDataDir: C:\Users\ABHIJE~1.AUT\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58363/devtoo..., se:cdpVersion: 140.0.3485.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d4db2ca5fa57fb42dda7fcbe6673a93 
+2025-10-05 18:38:08 [TestNG-test-UI Automation Test-3] ERROR com.ui.listeners.TestListener::onTestFailure::40 loginTest3  FAILED 
+2025-10-05 18:38:08 [TestNG-test-UI Automation Test-3] ERROR com.ui.listeners.TestListener::onTestFailure::41 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='View my customer account']"}
+  (Session info: MicrosoftEdge=140.0.3485.94)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f478c909fb6db27f2a0b36be8b42a497, findElement {using=xpath, value=//a[@title='View my customer account']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.94, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58414}, msedge: {msedgedriverVersion: 140.0.3485.110 (5819fb637a5..., userDataDir: C:\Users\ABHIJE~1.AUT\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58414/devtoo..., se:cdpVersion: 140.0.3485.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f478c909fb6db27f2a0b36be8b42a497 
+2025-10-05 18:38:08 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener::onTestSuccess::34 loginTest2  PASSED. 
+2025-10-05 18:38:09 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::<init>::31 Launching browser: EDGE 
+2025-10-05 18:38:09 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::<init>::31 Launching browser: EDGE 
+2025-10-05 18:38:09 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.HomePage::<init>::31 Launching browser: EDGE 
+2025-10-05 18:38:14 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::navigateToWebsite::42 Navigating to URL: http://www.automationpractice.pl/index.php 
+2025-10-05 18:38:14 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::navigateToWebsite::42 Navigating to URL: http://www.automationpractice.pl/index.php 
+2025-10-05 18:38:14 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.HomePage::navigateToWebsite::42 Navigating to URL: http://www.automationpractice.pl/index.php 
+2025-10-05 18:38:17 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.HomePage::navigateToWebsite::44 Maximizing browser 
+2025-10-05 18:38:17 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::navigateToWebsite::44 Maximizing browser 
+2025-10-05 18:38:23 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::navigateToWebsite::44 Maximizing browser 
+2025-10-05 18:38:23 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener::onTestStart::26 loginTest1 
+2025-10-05 18:38:23 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener::onTestStart::27 This is JSON data driven login test 
+2025-10-05 18:38:23 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener::onTestStart::28 [] 
+2025-10-05 18:38:23 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::49 clicking on Element: By.xpath: //a[@class='login'] 
+2025-10-05 18:38:23 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener::onTestStart::26 loginTest3 
+2025-10-05 18:38:23 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener::onTestStart::27 This is Excel data driven login test 
+2025-10-05 18:38:23 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener::onTestStart::28 [smoke, e2e] 
+2025-10-05 18:38:23 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.HomePage::clickOn::49 clicking on Element: By.xpath: //a[@class='login'] 
+2025-10-05 18:38:24 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener::onTestStart::26 loginTest2 
+2025-10-05 18:38:24 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener::onTestStart::27 This is CSV data driven login test 
+2025-10-05 18:38:24 [TestNG-test-UI Automation Test-2] INFO com.ui.listeners.TestListener::onTestStart::28 [] 
+2025-10-05 18:38:24 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::clickOn::49 clicking on Element: By.xpath: //a[@class='login'] 
+2025-10-05 18:38:28 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage::enterText::55 Entering text: kosih62204@ncien.com 
+2025-10-05 18:38:28 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LoginPage::enterText::55 Entering text: kosih62@ncien.com 
+2025-10-05 18:38:28 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.LoginPage::enterText::55 Entering text: kosih62204@ncien.com 
+2025-10-05 18:38:28 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LoginPage::enterText::55 Entering text: Password 
+2025-10-05 18:38:29 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage::enterText::55 Entering text: Password 
+2025-10-05 18:38:29 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LoginPage::clickOn::49 clicking on Element: By.id: SubmitLogin 
+2025-10-05 18:38:29 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage::clickOn::49 clicking on Element: By.id: SubmitLogin 
+2025-10-05 18:38:29 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.LoginPage::enterText::55 Entering text: Password 
+2025-10-05 18:38:29 [TestNG-test-UI Automation Test-3] INFO com.ui.pages.LoginPage::clickOn::49 clicking on Element: By.id: SubmitLogin 
+2025-10-05 18:38:30 [TestNG-test-UI Automation Test-2] ERROR com.ui.listeners.TestListener::onTestFailure::40 loginTest2  FAILED 
+2025-10-05 18:38:30 [TestNG-test-UI Automation Test-2] ERROR com.ui.listeners.TestListener::onTestFailure::41 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='View my customer account']"}
+  (Session info: MicrosoftEdge=140.0.3485.94)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d949035e37cab4a47751f9dc07059f02, findElement {using=xpath, value=//a[@title='View my customer account']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.94, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58767}, msedge: {msedgedriverVersion: 140.0.3485.110 (5819fb637a5..., userDataDir: C:\Users\ABHIJE~1.AUT\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58767/devtoo..., se:cdpVersion: 140.0.3485.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d949035e37cab4a47751f9dc07059f02 
+2025-10-05 18:38:31 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener::onTestSuccess::34 loginTest1  PASSED. 
+2025-10-05 18:38:32 [TestNG-test-UI Automation Test-3] INFO com.ui.listeners.TestListener::onTestSuccess::34 loginTest3  PASSED. 
+2025-10-05 18:38:33 [main] INFO com.ui.listeners.TestListener::onFinish::66 Test Suite Completed.. 
