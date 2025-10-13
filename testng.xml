@@ -10,9 +10,6 @@
     <test name="UI Automation Test">
         <classes>
             <class name="com.ui.tests.LoginTest">
-                <methods>
-                    <include name="loginTest1"/>
-                </methods>
 
             </class>
 
