@@ -20,7 +20,7 @@ public class ExcelReaderUtility {
         User user;
         List<User> list;
         try {
-            workbook=new XSSFWorkbook(new File(System.getProperty("user.dir")+"\\testdata\\"+fileName));
+            workbook=new XSSFWorkbook(new File(System.getProperty("user.dir")+"//testdata//"+fileName));
             sheet=workbook.getSheet("loginTestData");
             Iterator<Row> rowItertor=sheet.iterator();
             rowItertor.next();
@@ -31,9 +31,7 @@ public class ExcelReaderUtility {
                list.add(user);
             }
             workbook.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } catch (InvalidFormatException e) {
+        } catch (IOException | InvalidFormatException e) {
             throw new RuntimeException(e);
         }
         return list.iterator();
