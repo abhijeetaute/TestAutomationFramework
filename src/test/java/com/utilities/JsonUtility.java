@@ -12,7 +12,7 @@ import java.io.FileReader;
 public class JsonUtility {
     public static Environments readJson(Environment end){
         Gson gson=new Gson();
-        File file=new File(System.getProperty("user.dir")+"\\config\\config.json");
+        File file=new File(System.getProperty("user.dir")+"/config/config.json");
         FileReader fileReader=null;
         try {
              fileReader=new FileReader(file);
