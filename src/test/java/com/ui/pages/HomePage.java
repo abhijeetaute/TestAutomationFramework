@@ -14,9 +14,12 @@ import org.openqa.selenium.WebDriver;
 public class HomePage extends BrowserUtility {
     private static final  By SIGN_IN_LINK_LOC=By.xpath("//a[@class='login']");
 
-    public HomePage(Browser browserName) {
-        super(browserName);
+    public HomePage(Browser browserName,boolean isHeadless) {
+        super(browserName,isHeadless);
         navigateToWebsite(JsonUtility.readJson(QA).getUrl());
+    }
+    public HomePage(WebDriver driver){
+        super(driver);
     }
 
     public LoginPage goToLoginPage(){

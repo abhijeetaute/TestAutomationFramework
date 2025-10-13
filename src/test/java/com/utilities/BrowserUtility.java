@@ -6,7 +6,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.File;
@@ -27,12 +29,24 @@ public abstract class BrowserUtility {
         this.driver.set(driver);
     }
 
-    public BrowserUtility(Browser browser){
+    public BrowserUtility(Browser browser,boolean isHeadless){
         logger.info("Launching browser: "+browser);
-        if(browser==Browser.CHROME)
-            driver.set(new ChromeDriver());
-        else if(browser==Browser.EDGE)
+        if(browser==Browser.CHROME) {
+            if(isHeadless) {
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless");
+                options.addArguments("--window-size=1920,1080");
+                driver.set(new ChromeDriver(options));
+            }else driver.set(new ChromeDriver());
+        }else if(browser==Browser.EDGE) {
+            if(isHeadless){
+                EdgeOptions options=new EdgeOptions();
+                options.addArguments("--headless");
+                options.addArguments("disable-gpu");
+                driver.set(new EdgeDriver(options));
+            }else
             driver.set(new EdgeDriver());
+        }
         else if(browser==Browser.FIREFOX)
             driver.set(new FirefoxDriver());
         else

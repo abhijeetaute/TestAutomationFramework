@@ -4,9 +4,17 @@
         <listener class-name="com.ui.listeners.TestListener"></listener>
         
     </listeners>-->
+    <parameter name="browser" value="${browser}"></parameter>
+    <parameter name="isLambdaTest" value="${isLambdaTest}"></parameter>
+    <parameter name="isHeadless" value="${isHeadless}"></parameter>
     <test name="UI Automation Test">
         <classes>
-            <class name="com.ui.tests.LoginTest"/>
+            <class name="com.ui.tests.LoginTest">
+                <methods>
+                    <include name="loginTest1"/>
+                </methods>
+
+            </class>
 
         </classes>
     </test>
