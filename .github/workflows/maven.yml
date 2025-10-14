@@ -35,6 +35,13 @@ jobs:
          name: Test logs
          path: logs/
 
+    - name: upload screenshot artifact
+      if: always()
+      uses: actions/upload-artifact@v4.4.3
+      with:
+         name: screenshots to upload
+         path: screenshots/
+
     - name: upload test logs
       if: always()
       uses: actions/upload-artifact@v4.4.3
@@ -44,4 +51,20 @@ jobs:
 
     - name: Test Execution status
       run: echo "Test Completed"
+
+    - name: copy to gh pages folder
+      run: |
+          mkdir -p public/extent-report
+          cp -R report.html public/extent-report
+          cp -R screenshots/ public/extent-report/screenshots/
+          ls -l
+
+    - name: deploy
+      uses: JamesIves/github-pages-deploy-action@v4.7.3
+      with:
+         folder: public/extent-report
+         token: ${{github.token}}
+         clean: true
+         
+    
     
