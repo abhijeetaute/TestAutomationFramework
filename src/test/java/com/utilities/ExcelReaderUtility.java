@@ -20,7 +20,7 @@ public class ExcelReaderUtility {
         User user;
         List<User> list;
         try {
-            workbook=new XSSFWorkbook(new File(System.getProperty("user.dir")+"//testdata//"+fileName));
+            workbook=new XSSFWorkbook(new File(System.getProperty("user.dir")+"//testData//"+fileName));
             sheet=workbook.getSheet("loginTestData");
             Iterator<Row> rowItertor=sheet.iterator();
             rowItertor.next();
