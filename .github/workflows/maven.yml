@@ -50,9 +50,11 @@ jobs:
          path: report.html
 
     - name: Test Execution status
+      if: always()
       run: echo "Test Completed"
 
     - name: copy to gh pages folder
+      if: always()
       run: |
           mkdir -p public/extent-report
           cp -R report.html public/extent-report
@@ -60,6 +62,7 @@ jobs:
           ls -l
 
     - name: deploy
+      if: always()
       uses: JamesIves/github-pages-deploy-action@v4.7.3
       with:
          folder: public/extent-report
